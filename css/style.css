@@ -1,0 +1,20 @@
+.kura-emojimenu ul {
+    height: 2rem;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.kura-emojimenu li {
+    height: 100%;
+    flex: 1;
+    border-top:  3px solid transparent;
+    padding-top: .4rem;
+    color: #999;
+    text-align: center;
+    cursor: pointer;
+}
+
+.kura-emojimenu li.active {
+    border-top-color: #697ec4;
+    color: #000;
+}

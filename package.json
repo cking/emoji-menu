@@ -1,0 +1,11 @@
+{
+  "name": "EmojiMenu",
+  "version": "1.0.0",
+  "description": "Discord EmojiMenu Hack",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Kura",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
