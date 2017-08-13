@@ -1,6 +1,6 @@
 # EmojiMenu
 
-API to embed tabs into the emoji pickr
+API to embed tabs into the emoji picker
 
 ## Installation
 
@@ -35,5 +35,5 @@ window.DI.PluginManager.plugins.emojimenu.addTab("Tab Name", targetElement => { 
 }
 ```
 
-`addTab(tabName, callback)` needs the Tab Name as the first parameter, the callback receives one parameter, the parent `<div>`
-`removeTab(tabName)` removes the Tab specified by the Tab Name
+  - `addTab(tabName, callback)` needs the Tab Name as the first parameter, the callback receives one parameter, the parent `<div>` 
+  - `removeTab(tabName)` removes the Tab specified by the Tab Name
