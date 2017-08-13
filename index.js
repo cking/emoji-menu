@@ -13,6 +13,7 @@ class EmojiMenu extends Plugin {
     }
 
     unload() {
+        this.observer.disconnect();
     }
 
     parseHTML(html) {
@@ -103,7 +104,7 @@ class EmojiMenu extends Plugin {
         this.addTab("Telegram", (tgt) => {
             const menu = this.telegram.menu.build().get(0)
             tgt.appendChild(menu)
-            this.telegram.pack.checkSets()
+            this.telegram.tspack.checkSets()
         })
     }
 
@@ -128,7 +129,7 @@ class EmojiMenu extends Plugin {
     installTabs(target) {
         Object.keys(this.tabCallbacks).forEach(id => {
             const ul = target.querySelector("ul")
-            ul.append(this.parseHTML(`<li data-tab="${id}">${id}</li>`))
+            ul.appendChild(this.parseHTML(`<li data-tab="${id}">${id}</li>`))
         })
     }
     
